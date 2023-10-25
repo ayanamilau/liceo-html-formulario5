@@ -27,10 +27,27 @@
             <legend>Datos económicos</legend>
             <label for="precio">Precio</label>
             <input type="text" name="precio" id="precio" maxlength="10" size="10"> €
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <label for="impuestos">Impuestos</label>
-            <input type="text" name="impuestos" id="impuestos">
+            <select name="impuestos" id="impuestos">
+                <option value="4">4%</option>
+                <option value="7">7%</option>
+                <option value="18">18%</option>
+                <option value="21">21%</option>
+            </select>
+            <br>
+            <label >Promoción</label>
+            <br>
+            <input type="radio" name="promo" id="Ninguna" value="Ninguna" checked>
+            <label for="Ninguna">Ninguna</label>
+            <br>
+            <input type="radio" name="promo" id="Transporte" value="Transporte">
+            <label for="Transporte">Transporte gratis</label>
+            <br>
+            <input type="radio" name="promo" id="descuento" value="descuento">
+            <label for="descuento">descuento</label>
         </fieldset>
+        <input type="submit" value="Enviar">
     </form>
     
 </body>
